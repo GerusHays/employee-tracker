@@ -1,7 +1,7 @@
 const express = require('express');
 const inquirer = require('inquirer');
 const logo = require("asciiart-logo");
-const db = require('./db/');
+const db = require('.');
 require('console.table');
 
 const PORT = process.env.PORT || 3001;
