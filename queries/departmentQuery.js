@@ -77,5 +77,5 @@ const findDepartment = async(name) => {
         console.log(err);
     }
 };
-
+// exporting all of the functions
 module.exports = {showTable, getDepartment, anotherDepartment, deleteDepartment, findDepartment};

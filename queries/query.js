@@ -52,5 +52,5 @@ const viewDepartment = () => {
         }
     });
 };
-
+// exporting all the functions used in query.js
 module.exports = { viewRoles, viewEmployees, viewDepartment};
