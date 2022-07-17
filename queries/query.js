@@ -1,5 +1,5 @@
 const db = require('../db/connection');
-const table = require('console.table');
+const cTable = require('console.table');
 // const function to get the roles title
 const getRoles = (data) => { 
     // empty array for the roles 

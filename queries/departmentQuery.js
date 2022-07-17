@@ -1,5 +1,5 @@
 const db = require('../db/connection');
-const table = require('console.table');
+const cTable = require('console.table');
 
 // global variables for SQL
 const displayTable = `SELECT * FROM department`;
