@@ -1,3 +1,3 @@
-const home = require('./dist/home');
+const homePage = require('./dist/home');
 
 homePage();
