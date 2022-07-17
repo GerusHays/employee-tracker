@@ -202,13 +202,13 @@ const homePage = () => {
         "View All Roles",
         "View All Departments",
         "View Employees by Manager",
-        "Add a Department",
-        "Add a Role",
         "Add an Employee",
-        "Update Employee Role",
-        "Delete a Department",
-        "Delete a Role",
+        "Add a Role",
+        "Add a Department",
+        "Update an Employee's Role",
         "Delete an Employee",
+        "Delete a Role",
+        "Delete a Department",
         "Exit",
     ];
     inquirer
@@ -234,7 +234,7 @@ const homePage = () => {
                     break;
                 case "View Employees by Manager":
                     sortEmployeeByManager();
-                    return mainMenu();
+                    return homePage();
                 case "Add an Employee":
                     employeePrompt();
                     break;
@@ -248,13 +248,13 @@ const homePage = () => {
                     updateRolePrompt();
                     break;
                 case "Delete an Employee":
-                    deleteDepartmentPrompt();
+                    deleteEmployeePrompt();
                     break;
                 case "Delete a Role":
                     deleteRolePrompt();
                     break;
                 case "Delete a Department":
-                    deleteEmployeePrompt();
+                    deleteDepartmentPrompt();
                     break;
                 case "Exit":
                     process.exit();
