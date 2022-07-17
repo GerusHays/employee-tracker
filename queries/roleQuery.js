@@ -12,7 +12,7 @@ const roleTable = () => {
         });
 };
 
-const getRole = async () => {
+const getRoles = async () => {
     const roleQuery = `SELECT r.id ID, r.title Title, department.name Department, r.salary Salary
                         FROM role r
                         LEFT JOIN department ON r.department_id = department.id
@@ -59,4 +59,4 @@ const deleteRole = async (roleId) => {
 
 
 
-module.exports = { roleTable, getRole, searchRole, anotherRole, deleteRole }
+module.exports = { roleTable, getRoles, searchRole, anotherRole, deleteRole }
