@@ -34,7 +34,7 @@ const getDepartment = async() => {
     }
 };
 // ADD function to add another department name
-const addDepartment = async(name) => {
+const anotherDepartment = async(name) => {
     // sql variable to insert making a new department name
     const sql = `INSERT INTO department (name) VALUES ('${name}')`;
     // try catch
@@ -78,4 +78,4 @@ const findDepartment = async(name) => {
     }
 };
 
-module.exports = {showTable, getDepartment, addDepartment, deleteDepartment, findDepartment};
+module.exports = {showTable, getDepartment, anotherDepartment, deleteDepartment, findDepartment};
